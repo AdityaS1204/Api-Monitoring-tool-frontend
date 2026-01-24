@@ -1,4 +1,5 @@
 import { ArrowRight } from "lucide-react"
+import { Link } from "react-router-dom"
 
 const HeroSection = () => {
     return (
@@ -20,14 +21,15 @@ const HeroSection = () => {
                         </p>
 
                         <div className="flex flex-col sm:flex-row items-start sm:items-center gap-4 mt-4">
-                            <button className="px-8 py-4 bg-primary text-white font-semibold rounded-md hover:opacity-90 transition-all flex items-center gap-2 text-base">
+                            <Link to="/signup" className="px-8 py-4 bg-primary text-white font-semibold rounded-md hover:opacity-90 transition-all flex items-center gap-2 text-base">
                                 Start Monitoring APIs
                                 <ArrowRight size={18} />
-                            </button>
-                            <button className="px-8 py-4 bg-secondary text-foreground font-semibold rounded-md hover:bg-muted transition-all text-base border border-border">
+                            </Link>
+                            <Link to="/docs" className="px-8 py-4 bg-secondary text-foreground font-semibold rounded-md hover:bg-muted transition-all text-base border border-border">
                                 View Documentation
-                            </button>
+                            </Link>
                         </div>
+
 
                         <p className="text-sm text-muted-foreground/60 flex items-center gap-2">
                             <span className="flex -space-x-2">

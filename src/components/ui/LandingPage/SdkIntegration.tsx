@@ -6,20 +6,20 @@ const SdkIntegration = () => {
     const [copied, setCopied] = useState(false);
 
     const codeExamples: { [key: string]: string } = {
-        "Node.js": `import { monitor } from "@apimon/sdk";
+        "Node.js": `import { monitor } from "@InsightX/sdk";
 
 monitor.init({
   apiKey: "YOUR_API_KEY"
 });`,
-        "Python": `from apimon import monitor
+        "Python": `from InsightX import monitor
 
 monitor.init(
   api_key="YOUR_API_KEY"
 )`,
-        "Go": `import "github.com/apimon/sdk"
+        "Go": `import "github.com/Insightx/sdk"
 
 func main() {
-    apimon.Init("YOUR_API_KEY")
+    Insightx.Init("YOUR_API_KEY")
 }`
     };
 

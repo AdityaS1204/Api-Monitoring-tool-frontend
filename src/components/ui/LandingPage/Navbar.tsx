@@ -19,14 +19,15 @@ const Navbar = () => {
             <div className="flex items-center gap-2">
                 <Link to="/" className="text-xl font-bold text-foreground flex items-center gap-1">
                     <div className="w-8 h-8 bg-primary rounded-lg flex items-center justify-center">
-                        <span className="text-white text-lg">A</span>
+                        <span className="text-white text-lg">I</span>
                     </div>
-                    <span>ApiMon</span>
+                    <span>InsightX</span>
                 </Link>
             </div>
 
             <div className="hidden md:flex items-center gap-8 text-sm font-medium">
                 <Link to="/docs" className="text-muted-foreground hover:text-foreground transition-colors">Docs</Link>
+                <Link to="/signin" className="text-muted-foreground hover:text-foreground transition-colors">API key</Link>
                 <a href="https://github.com" target="_blank" rel="noopener noreferrer" className="text-muted-foreground hover:text-foreground transition-colors flex items-center gap-1">
                     <Github size={16} />
                     GitHub
@@ -34,10 +35,11 @@ const Navbar = () => {
             </div>
 
             <div className="flex items-center gap-4">
-                <button className="px-5 py-2 text-sm font-semibold text-white bg-primary rounded-md hover:opacity-90 transition-all">
+                <Link to="/signup" className="px-5 py-2 text-sm font-semibold text-white bg-primary rounded-md hover:opacity-90 transition-all">
                     Start Monitoring
-                </button>
+                </Link>
             </div>
+
         </nav>
     )
 };
