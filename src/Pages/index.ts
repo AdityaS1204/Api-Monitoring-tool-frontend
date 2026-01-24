@@ -1,4 +1,5 @@
 import Home from "./Home"
-import AuthPage from "./AuthPage"
+import SignInPage from "./SignInPage"
+import SignUpPage from "./SignUpPage"
 import Docs from "./Docs"
-export {Home,AuthPage,Docs};
+export { Home, SignInPage, SignUpPage, Docs };
