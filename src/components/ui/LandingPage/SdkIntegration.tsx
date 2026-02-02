@@ -84,11 +84,7 @@ func main() {
                                 <span className="text-muted-foreground/20">·</span>
                                 <span>Python</span>
                                 <span className="text-muted-foreground/20">·</span>
-                                <span>Java</span>
-                                <span className="text-muted-foreground/20">·</span>
                                 <span>Go</span>
-                                <span className="text-muted-foreground/20">·</span>
-                                <span>PHP</span>
                             </div>
                         </div>
                     </div>

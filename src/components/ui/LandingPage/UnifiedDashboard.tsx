@@ -1,3 +1,5 @@
+import {dashboard} from '../../../assets/index';
+
 const UnifiedDashboard = () => {
     return (
         <section className="py-32 lg:py-48 bg-background relative overflow-hidden text-center">
@@ -29,7 +31,7 @@ const UnifiedDashboard = () => {
 
                 <div className="relative mx-auto max-w-[1000px] border border-border rounded-2xl bg-card overflow-hidden shadow-2xl group">
                     <img
-                        src="https://images.unsplash.com/photo-1551288049-bbbda536639a?auto=format&fit=crop&q=80&w=2000"
+                        src={dashboard}
                         alt="Unified API Dashboard"
                         className="w-full h-auto grayscale opacity-90 group-hover:grayscale-0 group-hover:opacity-100 transition-all duration-700"
                     />

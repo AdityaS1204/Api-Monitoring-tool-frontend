@@ -22,7 +22,7 @@ const FinalCta = () => {
                         />
                         <Link to="/signup" className="w-full sm:w-auto">
                             <Button size="lg" className="w-full h-12 px-8">
-                                Get Early Access
+                                Get Started
                             </Button>
                         </Link>
                     </div>
