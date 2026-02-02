@@ -1,5 +1,15 @@
-import { createBrowserRouter } from "react-router-dom";
-import { Home, Docs, SignInPage, SignUpPage } from "../Pages/index";
+import { createBrowserRouter, Navigate } from "react-router-dom";
+import {
+    Home,
+    Docs,
+    SignInPage,
+    SignUpPage,
+    DashboardOverview,
+    Analytics,
+    Activity,
+    Reports,
+    DashboardSettings
+} from "../Pages/index";
 
 const AppRouter = createBrowserRouter([
     {
@@ -17,6 +27,30 @@ const AppRouter = createBrowserRouter([
     {
         path: "/docs",
         element: <Docs />,
+    },
+    {
+        path: "/dashboard",
+        element: <Navigate to="/dashboard/overview" replace />,
+    },
+    {
+        path: "/dashboard/overview",
+        element: <DashboardOverview />,
+    },
+    {
+        path: "/dashboard/analytics",
+        element: <Analytics />,
+    },
+    {
+        path: "/dashboard/activity",
+        element: <Activity />,
+    },
+    {
+        path: "/dashboard/reports",
+        element: <Reports />,
+    },
+    {
+        path: "/dashboard/settings",
+        element: <DashboardSettings />,
     },
 ])
 
