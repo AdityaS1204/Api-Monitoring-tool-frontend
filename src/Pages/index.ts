@@ -6,9 +6,13 @@ import Docs from "./Docs"
 // Dashboard pages
 export {
     DashboardOverview,
-    Analytics,
-    Activity,
-    Reports,
+    Apis,
+    Logs,
+    Errors,
+    Performance,
+    Documentation,
+    Alerts,
+    ApiKeys,
     DashboardSettings
 } from "./Dashboard";
 
