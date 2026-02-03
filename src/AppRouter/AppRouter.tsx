@@ -5,9 +5,13 @@ import {
     SignInPage,
     SignUpPage,
     DashboardOverview,
-    Analytics,
-    Activity,
-    Reports,
+    Apis,
+    Logs,
+    Errors,
+    Performance,
+    Documentation,
+    Alerts,
+    ApiKeys,
     DashboardSettings
 } from "../Pages/index";
 
@@ -37,16 +41,32 @@ const AppRouter = createBrowserRouter([
         element: <DashboardOverview />,
     },
     {
-        path: "/dashboard/analytics",
-        element: <Analytics />,
+        path: "/dashboard/apis",
+        element: <Apis />,
     },
     {
-        path: "/dashboard/activity",
-        element: <Activity />,
+        path: "/dashboard/logs",
+        element: <Logs />,
     },
     {
-        path: "/dashboard/reports",
-        element: <Reports />,
+        path: "/dashboard/errors",
+        element: <Errors />,
+    },
+    {
+        path: "/dashboard/performance",
+        element: <Performance />,
+    },
+    {
+        path: "/dashboard/documentation",
+        element: <Documentation />,
+    },
+    {
+        path: "/dashboard/alerts",
+        element: <Alerts />,
+    },
+    {
+        path: "/dashboard/api-keys",
+        element: <ApiKeys />,
     },
     {
         path: "/dashboard/settings",
